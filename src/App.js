@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React,{useState} from "react"
 import './App.css';
+// import Mycomponent from "./Mycomponent";
+// import Timer from "./Timer";
+import Board from "./TicTacToe/Board";
 
 function App() {
+  // const[visible,setvisible]=useState(true)
+  // useEffect(()=>{
+  //   console.log("I am mounting.....");
+  // },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className="App">
+    {/* {visible? <Mycomponent/>:<></>}
+    <button onClick={()=>setvisible(!visible)}>Toggle</button>
+    <Timer/> */}
+    <Board/>
+   </div>
   );
 }
 
